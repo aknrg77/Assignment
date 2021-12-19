@@ -14,32 +14,7 @@ const clashinginterviewHelper = async (
           $and: [
             {
               participants: { $in: inputParticipants },
-            },
-            // {
-            //   $or: [
-            //     {
-            //       $and: [
-            //         {
-            //           startDate: { $gte: inputstartDate },
-            //         },
-            //         {
-            //           startDate: { $lte: inputendDate },
-            //         },
-            //       ],
-            //     },
-
-            //     {
-            //       $and: [
-            //         {
-            //           endDate: { $gte: inputstartDate },
-            //         },
-            //         {
-            //           endDate: { $lte: Date(inputendDate) },
-            //         },
-            //       ],
-            //     },
-            //   ],
-            // },
+            }
           ],
         },
       },
